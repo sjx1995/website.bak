@@ -13,6 +13,7 @@
 </head>
 
 <body class="mdui-theme-primary-red mdui-color-red-50">
+    <!--顶部导航栏-->
     <div class="mdui-toolbar mdui-appbar-fixed mdui-color-theme-700 mdui-shadow-15">
         <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}">
             <i class="mdui-icon material-icons">menus</i>
@@ -23,7 +24,7 @@
             <i id="code-icon" class="mdui-icon mdui-icon-right material-icons">code</i>
         </button>
    </div>
-
+    <!--左侧导航栏-->
     <div class="mdui-drawer mdui-drawer-close mdui-color-white" overlay id="left-drawer">
         <ul class="mdui-list">
             <li class="mdui-list-item mdui-ripple mdui-list-item-active">主页</li>
@@ -32,7 +33,7 @@
             <a href="mailto:email@sunly.in" class="mdui-list-item mdui-ripple">联系我</a>
         </ul>
     </div>
-
+    <!--响应式布局-->
     <div class="mdui-container-fluid">
         <div class="mdui-row">
             <div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-0" ></div>
@@ -53,6 +54,23 @@
                         <!-- 卡片的按钮 -->
                         <div class="mdui-card-actions">
                             <button class="mdui-btn mdui-ripple" onclick="window.location='https://sunly.in/Blog'">打开博客</button>
+                        </div>
+                    </div>
+                    <div class="mdui-card mdui-shadow-24 mdui-hoverable">
+                        <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                        <div class="mdui-card-media">
+                            <img id="card-img-4" src="./index/img/card.jpg"/>
+                        </div>
+                        <!-- 卡片的标题和副标题 -->
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">喂 等等我好吗</div>
+                            <div class="mdui-card-primary-subtitle">愿你出走半生 归来仍是少年</div>
+                        </div>
+                        <!-- 卡片的内容 -->
+                        <div class="mdui-card-content">这里是卡片的内容。这里是卡片的内容。这里是卡片的内容。这里是卡片的内容。这里是卡片的内容。</div>
+                        <!-- 卡片的按钮 -->
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-ripple" onclick="window.location='https://sunly.in/Ohhhhhhhhhhhh'">打开内容</button>
                         </div>
                     </div>
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable">
@@ -92,7 +110,7 @@
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable mdui-ripple mdui-ripple-blue" id="card-time">
                         <!--&lt;!&ndash; 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 &ndash;&gt;-->
                         <div class="mdui-card-media">
-                            <img id="card-img-4" src="./index/img/time.jpg"/>
+                            <img id="card-img-5" src="./index/img/time.jpg"/>
                         </div>
                         <!--&lt;!&ndash; 卡片的标题和副标题 &ndash;&gt;-->
                         <!--<div class="mdui-card-primary">-->
@@ -113,6 +131,7 @@
             <div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-0"></div>
         </div>
     </div>
+    <!--footer-->
     <footer class="footer-nav mdui-color-theme-700 mdui-shadow-10">
         <p>Theme by <a href="https://www.mdui.org">MDUI</a>.   Copyright © Sunly 2015-2018</p>
     </footer>
