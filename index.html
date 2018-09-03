@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>(53,75,6E,6C,79)</title>
     <link rel="stylesheet" href="./index/mdui/css/mdui.min.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="./index/img/favicon.ico">
     <link rel="stylesheet" href="./index/main.css">
     <link href="font/footer-font.css" rel="stylesheet" type="text/css">
     <!--<link href='https://cdn.webfont.youziku.com/webfonts/nomal/122621/45817/5b89fd6af629d90cb0bdb76e.css' rel='stylesheet' type='text/css' />-->
@@ -12,19 +13,26 @@
 </head>
 
 <body class="mdui-theme-primary-red mdui-color-red-50">
-    <div class="mdui-toolbar mdui-color-theme-700 mdui-shadow-15">
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+    <div class="mdui-toolbar mdui-appbar-fixed mdui-color-theme-700 mdui-shadow-15">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}">
             <i class="mdui-icon material-icons">menus</i>
         </a>
         <span class="mdui-typo-headline">sunly.in</span>
         <div class="mdui-toolbar-spacer"></div>
-        <button id="code-button" class="mdui-btn mdui-ripple mdui-fab mdui-color-theme-accent">
+        <button id="code-button" class="mdui-btn mdui-ripple mdui-fab mdui-color-yellow" onclick="window.location='https://github.com/sjx1995'">
             <i id="code-icon" class="mdui-icon mdui-icon-right material-icons">code</i>
         </button>
    </div>
-    <!--<div class="mdui-drawer">-->
 
-    <!--</div>-->
+    <div class="mdui-drawer mdui-drawer-close mdui-color-white" overlay id="left-drawer">
+        <ul class="mdui-list">
+            <li class="mdui-list-item mdui-ripple mdui-list-item-active">主页</li>
+            <a href="https://sjx1995.github.io/" class="mdui-list-item mdui-ripple">旧博客地址</a>
+            <li class="mdui-divider mdui-m-y-20"></li>
+            <a href="mailto:email@sunly.in" class="mdui-list-item mdui-ripple">联系我</a>
+        </ul>
+    </div>
+
     <div class="mdui-container-fluid">
         <div class="mdui-row">
             <div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-0" ></div>
