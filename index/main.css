@@ -1,0 +1,68 @@
+.mdui-row > [class*="mdui-col-"] {
+    padding-top: 56px;
+    padding-bottom: 70px;
+    /*background-color: #E8EAF6;*/
+    /*border: 1px solid #C5CAE9;*/
+    /*margin-bottom: 8px;*/
+}
+html,body {
+    height: 100%;
+}
+.mdui-toolbar {
+    position: fixed;
+    z-index: 1;
+}
+#share-button {
+    margin-right: 30px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+.mdui-container, .mdui-container-fluid {
+    min-height: 77.88%;
+}
+.card-box {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.mdui-card {
+    max-width: 280px;
+    height: 442.462px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#card-time {
+    text-align: center;
+}
+#card-time p {
+    vertical-align: middle;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.footer-nav {
+    position: fixed;
+    width: 100%;
+    /*margin-top: 50px;*/
+    /*margin-bottom: 1%;*/
+    bottom: 0px;
+    height: 60px;
+}
+.footer-nav p {
+    text-align: center;
+    font-size: 11px;
+    font-family:'ChannelSlanted2';
+    padding-top: 25px;
+}
+.footer-nav a {
+    color: #ffff00;
+}

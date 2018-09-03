@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>倒计时</title>
+    <meta charset="UTF-8">
+	<link href="./fontcss/footer-font.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            /*width: 500px;*/
+            /*height: 50px;*/
+            line-height: 80px;
+            margin: 10%;
+            text-align: center;
+        }
+        .wrap span{
+            /*display: inline-block;*/
+            margin: 0 10px;
+        }
+		footer {
+		    position: absolute;
+		    width: 99%;
+		    margin-bottom: 1%;
+		    bottom: 0px;
+		}
+		footer p {
+			text-align: center;
+			font-size: 12px;
+			font-family:'ChannelSlanted2';
+		}
+    </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4242e0ce57d15691136c264a5926d7d6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script>
+        window.onload = function(){
+
+            let setTime = setInterval(function(){
+                //ti开始时间
+                let endDate = new Date("2018/12/28,00:00:00");
+                let currDate = new Date();
+                let leftTime = parseInt((endDate.getTime() - currDate.getTime())/1000);
+                if(leftTime <=  0){
+                    document.getElementsByClassName("wrap")[0].innerHTML = "更多相关:@Astifact";
+                    clearInterval(setTime);
+                }
+                //1d = 24h * 60m * 60s
+                let d = parseInt(leftTime/(24*60*60));
+                //1h = 60m * 60s
+                let h = parseInt((leftTime/(60*60))%24);
+                //1m = 60s
+                let m = parseInt((leftTime/60)%60);
+                let s = leftTime%60;
+                document.getElementById("day").innerHTML = d;
+                document.getElementById("hour").innerHTML = h;
+                document.getElementById("minu").innerHTML = m;
+                document.getElementById("sec").innerHTML = s;
+            }, 500);
+        }
+    </script>
+</head>
+<body>
+	<div class="wrap">
+	    <h3>距离</h3>
+	    <h1>Artifact 发售</h1>
+	    <h2>还剩 <span id="day"></span> 天 <span id="hour"></span> 小时 <span id="minu"></span> 分 <span id="sec"></span>  秒 （太平洋时间）</h2>
+	</div>
+	<footer>
+		<p>code by Sunly.</p>
+	</footer>
+</body>
+</html>
