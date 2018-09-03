@@ -12,12 +12,21 @@ html,body {
     position: fixed;
     z-index: 1;
 }
-#share-button {
+#code-button {
     margin-right: 30px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 0!important;
     /*display: flex;*/
     /*flex-direction: column;*/
     /*align-items: center;*/
     /*justify-content: center;*/
+}
+#code-icon {
+    top: -7px;
+    left: -7px;
+    font-size: 20px;
 }
 .mdui-container, .mdui-container-fluid {
     min-height: 77.88%;
