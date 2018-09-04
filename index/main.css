@@ -49,6 +49,11 @@ html,body {
     margin-left: 10px;
     margin-right: 10px;
 }
+.mdui-card-actions {
+    position: absolute;
+    bottom: 8px;
+    left: 7px;
+}
 #card-time {
     text-align: center;
 }

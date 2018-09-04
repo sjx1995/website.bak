@@ -1,8 +1,23 @@
+/*@font-face {*/
+    /*font-family: 'cwTeXMing';*/
+    /*font-style: normal;*/
+    /*font-weight: 500;*/
+    /*src: url(//fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.eot);*/
+    /*src: url(//fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.eot?#iefix) format('embedded-opentype'),*/
+    /*url(//fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.woff2) format('woff2'),*/
+    /*url(//fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.woff) format('woff'),*/
+    /*url(//fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.ttf) format('truetype');*/
+/*}*/
 body {
     background-color: #f2f2f2;
 }
 p, h1 {
     text-align: center;
+    font-family: '宋体';
+    /*font-family: PMingLiU;*/
+    /*font-family: 'Noto Sans SC Sliced', sans-serif;*/
+    /*font-family: 'Noto Sans TC', sans-serif;*/
+    /*font-family: 'Noto Sans SC', sans-serif;*/
     /*font-family: '0c16162dbb314613bc8fd7a6520b6baf' !important;*/
 }
 .sentence {
@@ -20,10 +35,18 @@ p, h1 {
 #section1 {
     padding: 0 15% 0 15%;
 }
+#section2 {
+     padding: 0 13% 0 13%;
+}
 .sentence-1 {
     font-size: 40px;
     text-align: left;
     margin: 0 20% 53px 30%;
+}
+.sentence-2 {
+    font-size: 40px;
+    text-align: left;
+    margin: 0 20% 53px 20%;
 }
 .sentence-4 {
     margin: 0 20% 53px 20%;
