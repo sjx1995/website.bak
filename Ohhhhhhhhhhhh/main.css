@@ -9,7 +9,7 @@
     /*url(//fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.ttf) format('truetype');*/
 /*}*/
 body {
-    background-color: #f2f2f2;
+    background-color: #e8e8e8;
 }
 p, h1 {
     text-align: center;
@@ -32,23 +32,26 @@ p, h1 {
     font-size: 21px;
     line-height: 50px;
 }
-#section1 {
+#section2 {
     padding: 0 15% 0 15%;
 }
-#section2 {
+#section3 {
      padding: 0 13% 0 13%;
-}
-.sentence-1 {
-    font-size: 40px;
-    text-align: left;
-    margin: 0 20% 53px 30%;
 }
 .sentence-2 {
     font-size: 40px;
     text-align: left;
+    margin: 0 20% 53px 30%;
+}
+#date2 {
+    margin-left: 10px;
+}
+.sentence-3 {
+    font-size: 40px;
+    /*text-align: left;*/
     margin: 0 20% 53px 20%;
 }
-.sentence-4 {
+.sentence-5 {
     margin: 0 20% 53px 20%;
 }
 .to-down {
