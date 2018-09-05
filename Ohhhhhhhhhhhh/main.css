@@ -11,15 +11,45 @@
 body {
     background-color: #e8e8e8;
 }
-p, h1 {
+/*宋体（舊字形，適用繁體中文）*/
+/*html:lang(zh-Hant) {*/
+    /*font-family: 'Biaodian Pro Serif',*/
+    /*'Numeral LF Serif',*/
+    /*Georgia,*/
+    /*'Times New Roman',*/
+    /*'Han Songti',*/
+    /*serif;*/
+/*}*/
+/*楷体 繁體字（國字標準字體［字形］）*/
+/*html:lang(zh-Hant) {*/
+    /*font-family:*/
+            /*'Biaodian Pro Serif CNS',             !* 1.汉字标点字体集 *!*/
+            /*'Numeral LF Serif',                    !* 2.数字字体集 *!*/
+            /*Georgia, 'Times New Roman',           !* 3.西文字体 *!*/
+            /*'Zhuyin Kaiti',                        !* 4.注音符号字体集 *!*/
+            /*'Han Kaiti CNS',                       !* 5.汉字字体集 *!*/
+            /*cursive, serif;                        !* 6.字体基型 *!*/
+    /*text-align: center;*/
+/*}*/
+p:lang(zh-Hant) {
+    font-family:
+            'Biaodian Pro Serif CNS',             /* 1.汉字标点字体集 */
+            'Numeral LF Serif',                    /* 2.数字字体集 */
+            Georgia, 'Times New Roman',           /* 3.西文字体 */
+            'Zhuyin Kaiti',                        /* 4.注音符号字体集 */
+            'Han Kaiti CNS',                       /* 5.汉字字体集 */
+            cursive, serif;                        /* 6.字体基型 */
     text-align: center;
-    font-family: '宋体';
-    /*font-family: PMingLiU;*/
-    /*font-family: 'Noto Sans SC Sliced', sans-serif;*/
-    /*font-family: 'Noto Sans TC', sans-serif;*/
-    /*font-family: 'Noto Sans SC', sans-serif;*/
-    /*font-family: '0c16162dbb314613bc8fd7a6520b6baf' !important;*/
 }
+/*p, h1 {*/
+    /*text-align: center;*/
+    /*font-family: '宋体';*/
+    /*!*font-family: PMingLiU;*!*/
+    /*!*font-family: 'Noto Sans SC Sliced', sans-serif;*!*/
+    /*!*font-family: 'Noto Sans TC', sans-serif;*!*/
+    /*!*font-family: 'Noto Sans SC', sans-serif;*!*/
+    /*!*font-family: '0c16162dbb314613bc8fd7a6520b6baf' !important;*!*/
+/*}*/
 .sentence {
     font-size: 53px;
     margin-bottom: 53px;
@@ -38,11 +68,11 @@ p, h1 {
 #section3 {
      padding: 0 13% 0 13%;
 }
-.sentence-2 {
-    font-size: 40px;
-    text-align: left;
-    margin: 0 20% 53px 30%;
-}
+/*.sentence-2 {*/
+    /*font-size: 40px;*/
+    /*text-align: left;*/
+    /*margin: 0 20% 53px 30%;*/
+/*}*/
 #date2 {
     margin-left: 10px;
 }

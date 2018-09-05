@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hant" class="han-init">
 <head>
     <meta charset="UTF-8">
     <title>REMEMBER</title>
+    <!--CSS-ICON https://github.com/kliuj/css-icons-->
     <link rel="stylesheet" type="text/css" href="../font/icon.css" />
+    <!--fullpage https://github.com/alvarotrigo/fullpage.js-->
     <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <!--汉字标准格式 https://github.com/ethantw/Han-->
+    <link href="//cdn.bootcss.com/Han/3.3.0/han.min.css" rel="stylesheet">
+
     <style type="text/css">
         /*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
         /*@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);*/
     </style>
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
     <div class="to-down">
@@ -17,10 +22,10 @@
     </div>
     <!--壹 贰 叁 肆 伍 陆 柒 捌 玖 拾-->
     <div id="fullpage">
-        <div class="section active" id="section5">
-            <p class="sentence sentence-5">「你不能依賴任何人，事實上並沒有嚮導，沒有老師，也沒有權威，只有靠你自己——你和他人，以及你和世界的關係——除此之外，一無所持。」 </p>
-            <p class="description">克裡希那穆提  《重新認識你自己》</p>
-            <p class="date">贰零壹捌年玖月壹日</p>
+        <div class="section active" id="section5" lang="zh-Hant">
+            <p class="sentence sentence-5" lang="zh-Hant">「你不能依賴任何人，事實上並沒有嚮導，沒有老師，也沒有權威，只有靠你自己——你和他人，以及你和世界的關係——除此之外，一無所持。」 </p>
+            <p class="description" lang="zh-Hant">克裡希那穆提  《重新認識你自己》</p>
+            <p class="date" lang="zh-Hant">贰零壹捌年玖月壹日</p>
 
         </div>
         <div class="section" id="section4">
@@ -42,7 +47,7 @@
         </div>
         <div class="section">
             <div id="section2">
-                <p class="sentence sentence-2">慘綠青年 你短髮濃密<br>
+                <p class="sentence sentence-2" style="font-size: 40px;text-align: left;margin: 0 20% 53px 30%;">慘綠青年 你短髮濃密<br>
                     誰給你剪 誰給你剪<br>
                     明天你預算將翻過天邊地平線<br>
                     慘綠青年 你比我沒底線<br>
@@ -87,6 +92,6 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-
+    <script src="//cdn.bootcss.com/Han/3.3.0/han.min.js"></script>
 </body>
 </html>
