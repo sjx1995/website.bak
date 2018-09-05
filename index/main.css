@@ -11,6 +11,7 @@ html,body {
 .mdui-toolbar {
     position: fixed;
     z-index: 1;
+    opacity: 0.9;
 }
 #code-button {
     margin-right: 30px;
@@ -31,9 +32,9 @@ html,body {
 .mdui-drawer {
     top: 56px;
 }
-.mdui-container, .mdui-container-fluid {
-    min-height: 77.88%;
-}
+/*.mdui-container, .mdui-container-fluid {*/
+    /*min-height: 77.88%;*/
+/*}*/
 .card-box {
     display: flex;
     margin-top: 30px;
@@ -73,12 +74,13 @@ html,body {
     user-select: none;
 }
 .footer-nav {
-    position: fixed;
+    position: relative;
     width: 100%;
     /*margin-top: 50px;*/
     /*margin-bottom: 1%;*/
     bottom: 0px;
     height: 60px;
+    opacity: 0.9;
 }
 .footer-nav p {
     text-align: center;
