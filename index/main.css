@@ -36,6 +36,7 @@ html,body {
     /*min-height: 77.88%;*/
 /*}*/
 .card-box {
+    width: 80%;
     display: flex;
     margin-top: 30px;
     flex-wrap: wrap;

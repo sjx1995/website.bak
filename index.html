@@ -15,15 +15,17 @@
 
 <body class="mdui-theme-primary-red mdui-color-red-50">
     <!--顶部导航栏-->
-    <div class="mdui-toolbar mdui-appbar-fixed mdui-color-theme-700 mdui-shadow-15">
+    <div class="mdui-toolbar mdui-color-theme-700 mdui-shadow-15 mdui-appbar-fixed">
         <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}">
             <i class="mdui-icon material-icons">menus</i>
         </a>
         <span class="mdui-typo-headline">sunly.in</span>
         <div class="mdui-toolbar-spacer"></div>
-        <button id="code-button" class="mdui-btn mdui-ripple mdui-fab mdui-color-yellow" onclick="window.location='https://github.com/sjx1995'">
-            <i id="code-icon" class="mdui-icon mdui-icon-right material-icons">code</i>
-        </button>
+
+        <!--右上角图标-->
+        <!--<button id="code-button" class="mdui-btn mdui-ripple mdui-fab mdui-color-yellow" onclick="window.location='https://github.com/sjx1995'">-->
+            <!--<i id="code-icon" class="mdui-icon mdui-icon-right material-icons">code</i>-->
+        <!--</button>-->
    </div>
     <!--左侧导航栏-->
     <div class="mdui-drawer mdui-drawer-close mdui-color-white" overlay id="left-drawer">
@@ -37,8 +39,8 @@
     <!--响应式布局-->
     <div class="mdui-container-fluid">
         <div class="mdui-row">
-            <div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-0" ></div>
-            <div class="mdui-col-lg-10 mdui-col-md-10 mdui-col-sm-10 mdui-col-xs-12">
+            <!--<div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-1" ></div>-->
+            <div class="mdui-col-lg-12 mdui-col-md-12 mdui-col-sm-12 mdui-col-xs-12">
                 <div class="card-box">
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable">
                         <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
@@ -54,7 +56,7 @@
                         <div class="mdui-card-content">Coming Soon</div>
                         <!-- 卡片的按钮 -->
                         <div class="mdui-card-actions">
-                            <button class="mdui-btn mdui-ripple mdui-color-indigo-50" onclick="window.location='https://sunly.in/Blog'">打开博客</button>
+                            <button class="mdui-btn mdui-ripple mdui-shadow-2 mdui-color-indigo-50" onclick="window.location='https://sunly.in/Blog'">打开博客</button>
                         </div>
                     </div>
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable">
@@ -71,7 +73,7 @@
                         <div class="mdui-card-content">面对未知莽撞的生活丢失自我之前/将我的梦写下来/好让我记住我自己/以此/抚慰在这座城市的梦想/和怀揣的不安</div>
                         <!-- 卡片的按钮 -->
                         <div class="mdui-card-actions">
-                            <button class="mdui-btn mdui-ripple mdui-color-indigo-50" onclick="window.location='https://sunly.in/Ohhhhhhhhhhhh'">打开内容</button>
+                            <button class="mdui-btn mdui-ripple mdui-shadow-2 mdui-color-indigo-50" onclick="window.location='https://sunly.in/Ohhhhhhhhhhhh'">打开内容</button>
                         </div>
                     </div>
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable">
@@ -88,7 +90,7 @@
                         <div class="mdui-card-content">用JavaScript写的简单倒计时</div>
                         <!-- 卡片的按钮 -->
                         <div class="mdui-card-actions">
-                            <button class="mdui-btn mdui-ripple mdui-color-indigo-50" onclick="window.location='https://sunly.in/ti8'">打开内容</button>
+                            <button class="mdui-btn mdui-ripple mdui-shadow-2 mdui-color-indigo-50" onclick="window.location='https://sunly.in/ti8'">打开内容</button>
                         </div>
                     </div>
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable">
@@ -105,7 +107,7 @@
                         <div class="mdui-card-content">这里是卡片的内容。这里是卡片的内容。这里是卡片的内容。这里是卡片的内容。这里是卡片的内容。</div>
                         <!-- 卡片的按钮 -->
                         <div class="mdui-card-actions">
-                            <button class="mdui-btn mdui-ripple mdui-color-indigo-50" onclick="window.location='https://sunly.in/script-update'">打开内容</button>
+                            <button class="mdui-btn mdui-ripple mdui-shadow-2 mdui-color-indigo-50" onclick="window.location='https://sunly.in/script-update'">打开内容</button>
                         </div>
                     </div>
                     <div class="mdui-card mdui-shadow-24 mdui-hoverable mdui-ripple mdui-ripple-blue" id="card-time">
@@ -127,9 +129,54 @@
                         <div class="mdui-card-primary-title" id="time-text"><p><strong>本站已经运行</strong></p></div>
                         <div class="mdui-typo-subheading"><p><span id="sitetime"></span></p></div>
                     </div>
+                    <!--右下角菜单按钮-->
+                    <div class="mdui-fab-wrapper" id="exampleFab" mdui-fab="{trigger: 'hover'}">
+                        <button class="mdui-fab mdui-ripple mdui-color-theme-accent mdui-color-theme-700">
+                            <!-- 默认显示的图标 -->
+                            <i class="mdui-icon material-icons">add</i>
+                            <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
+                            <i class="mdui-icon mdui-fab-opened material-icons">add</i>
+                        </button>
+                        <div class="mdui-fab-dial">
+                            <!--github-->
+                            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" onclick="window.location='https://github.com/sjx1995'">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+                                c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+                                c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+                                c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+                                c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+                                c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
+                                </svg>
+                            </button>
+                            <!--netnase-->
+                            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="window.location='https://music.163.com/#/user/home?id=3421439'">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 37px;height:37px;margin-top: 3px;margin-left: 4px">
+                                    <path style="stroke-linejoin:round;stroke:#ffffff;stroke-linecap:round;stroke-width:3;fill:none" d="m13.2 8.5c-4.9402122 2.286536-6.2602638 6.026807-5.3855732 9.864134 1.992172 8.739831 8.7582722 7.083109 9.9344842 6.885866 1.948524-0.32676 5.843426-1.258336 6.628089-6.120145 0.801844-4.968268-2.438603-6.934278-4.39283-7.365494-2.454915-0.541697-4.467518-0.199375-5.58317 1.531442-1.035117 1.605875-1.121361 3.590198-0.468 4.922479 0.596436 1.216211 1.151194 1.261003 2.074519 1.281718 3.183455 0.07142 3.61465-1.387968 3.267045-3.25071-0.804333-3.964226-2.661363-5.08793-2.022377-8.1511849 0.653452-2.0633633 2.799353-1.7760777 4.247813-0.5982102"/>
+                                </svg>
+                            </button>
+                            <!--steam-->
+                            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" onclick="window.location='http://steamcommunity.com/id/sunly95'">
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="white" viewBox="0 0 512.003 512.003" style="height: 26px; width: 26px; margin-top: 5px; margin-left: -1px; enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+                                    <path d="M352.003,141.491c0,26.51,21.489,48,48,48c26.51,0,48-21.49,48-48s-21.49-48-48-48
+                                        C373.492,93.491,352.003,114.981,352.003,141.491z M479.198,62.295c-43.738-43.738-114.652-43.738-158.394,0
+                                        c-17.789,17.789-28.343,40.073-31.66,63.196l0,0L186.797,280.605c-13.753,0.703-27.388,4.208-39.983,10.508l-78.946-61.712
+                                        c-18.275-14.287-44.671-11.051-58.956,7.224c-14.286,18.275-11.051,44.671,7.224,58.957l77.967,60.946
+                                        c-8.48,33.391,0.336,70.269,26.465,96.396c39.453,39.452,103.416,39.452,142.869,0c24.232-24.231,33.574-57.714,28.039-89.083
+                                        l124.527-111.491l-0.002-0.001c23.124-3.319,45.408-13.872,63.197-31.661C522.938,176.949,522.938,106.034,479.198,62.295z
+                                         M192.002,448.84c-37.195,0-67.349-30.15-67.349-67.349c0-0.355,0.021-0.707,0.027-1.062l33.456,26.152
+                                        c7.68,6.003,16.791,8.912,25.837,8.912c12.481,0,24.836-5.54,33.119-16.136c14.286-18.275,11.051-44.672-7.224-58.956
+                                        l-31.75-24.818c4.481-0.939,9.124-1.439,13.884-1.439c37.196,0,67.351,30.152,67.351,67.35
+                                        C259.353,418.689,229.198,448.84,192.002,448.84z M400.003,221.491c-44.184,0-80-35.817-80-80s35.816-80,80-80
+                                        c44.183,0,80,35.817,80,80S444.186,221.491,400.003,221.491z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-0"></div>
+            <!--<div class="mdui-col-lg-1 mdui-col-md-1 mdui-col-sm-1 mdui-col-xs-1"></div>-->
         </div>
     </div>
     <!--footer-->
