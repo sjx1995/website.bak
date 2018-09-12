@@ -1,5 +1,5 @@
 .mdui-row > [class*="mdui-col-"] {
-    padding-top: 56px;
+    padding-top: 13px;
     padding-bottom: 70px;
     /*background-color: #E8EAF6;*/
     /*border: 1px solid #C5CAE9;*/
@@ -32,9 +32,11 @@ html,body {
 .mdui-drawer {
     top: 56px;
 }
-/*.mdui-container, .mdui-container-fluid {*/
-    /*min-height: 77.88%;*/
-/*}*/
+.mdui-container-fluid {
+    padding-top:56px;
+    min-height: calc(100vh - 60px);
+    padding-bottom: 60px;
+}
 .card-box {
     width: 80%;
     display: flex;
