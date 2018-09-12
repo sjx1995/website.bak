@@ -2,9 +2,9 @@
 title: AirPods：这可能是我使用过最棒的蓝牙耳机
 date: 2018-09-11 10:59:24
 categories: 数码体验
-<!-- tags:
+tags:
 - 数码
-- 体验感受 -->
+- 体验感受
 ---
 前段时间趁着打折入了传说中去地铁站就能捡到的AirPods，使用了一周，体验竟出乎意料的好，这可能是我目前用过最好的蓝牙耳机了。<!--more-->
 
@@ -15,7 +15,7 @@ categories: 数码体验
 
 不过实际使用一周下来发现并没有掉落的情况，其实只要不是大幅度的左右晃头的话一般都不会掉。而且因为没有线的顾虑加上本来就很轻的腔体，使用时耳朵的负担基本没有，甚至常常会忘记耳机的存在，但就这一点，就已经比我原来使用的蓝牙耳机强很多了。而且耳机虽然小，功能却不少，摘下停止播放，双击暂停、切歌，而且信号竟然比我之前有VSONIC要好。
 
-![](http://ww1.sinaimg.cn/large/9f2a978egy1fv6h6lfssdj22bs3401kz.jpg)
+![](https://ww1.sinaimg.cn/large/9f2a978egy1fv6h6lfssdj22bs3401kz.jpg)
 
 ## Design by Apple
 
@@ -27,9 +27,9 @@ categories: 数码体验
 
 可能是苹果设计师的洁癖，AirPods将设备信息印在了盖子内侧和耳机腔体下沿，精致又讲究。
 
-![](http://ww1.sinaimg.cn/large/9f2a978egy1fv6h6w9lf0j22bs340kjm.jpg)
+![](https://ww1.sinaimg.cn/large/9f2a978egy1fv6h6w9lf0j22bs340kjm.jpg)
 
-![](http://ww1.sinaimg.cn/large/9f2a978egy1fv6h744b34j23402bsu0y.jpg)
+![](https://ww1.sinaimg.cn/large/9f2a978egy1fv6h744b34j23402bsu0y.jpg)
 
 ## 音质
 
@@ -53,7 +53,7 @@ categories: 数码体验
 
 很多功能都只有IOS用户才能体验或者设置，Android用户需要第三方软件，而且体验也不是很好，我用的是AirBattery来实现查看电量和双击暂停功能。
 
-![](http://ww1.sinaimg.cn/large/9f2a978egy1fv6h7hv3ixj20u01hc40b.jpg)
+![](https://ww1.sinaimg.cn/large/9f2a978egy1fv6h7hv3ixj20u01hc40b.jpg)
 
 当手机放在胸前阅读的时候有一定概率出线信号不好的情况,不过不影响使用。有时在外面也会出现信号不好，声音断断续续的情况，不知道是不是个例，不过对平时影响也不大就没再去换。
 
