@@ -102,6 +102,7 @@ tags:
 参考资料：
 - <a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局教程:语法篇 - 阮一峰的网络日志</a>
 - <a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html">Flex 布局教程:实例篇 - 阮一峰的网络日志</a>
+- <a href="https://codepen.io/sofeien/full/dNeLOd">Flex布局演示</a>
 
 弹性布局可以更好的支持流动界面。
 将任意容器指定为flex布局：
