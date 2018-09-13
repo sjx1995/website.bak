@@ -33,16 +33,19 @@ html,body {
     top: 56px;
 }
 .mdui-container-fluid {
-    padding-top:56px;
+    margin-top:56px;
     min-height: calc(100vh - 60px);
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
 }
+/*280*4+10*8=1200*/
 .card-box {
-    width: 80%;
+    max-width: 1200px;
     display: flex;
+    display: -webkit-flex;
     margin-top: 30px;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
     top: 0px;
@@ -53,11 +56,15 @@ html,body {
     margin-right: auto;
 }
 .mdui-card {
-    max-width: 280px;
-    height: 442.462px;
+    width: 280px;
+    height: 442px;
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.empty-card {
+    width: 280px;
+    height: 0px;
 }
 .mdui-card-actions {
     position: absolute;
