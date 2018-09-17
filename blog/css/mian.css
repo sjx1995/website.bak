@@ -50,4 +50,20 @@ body, html {
 .article-list {
     font-size: 30px;
     line-height: 70px;
+    margin-bottom: 10px;
 }
+.article-address {
+    background-color: red;
+    color: white;
+}
+.article-address:link {color: white; text-decoration:none;}
+/*//未访问：蓝色、无下划线*/
+
+.article-address:active {color: white; }
+/*//激活：红色*/
+
+.article-address:visited {color:white;text-decoration:none;}
+/*//已访问：紫色、无下划线*/
+
+.article-address:hover {color: yellow; text-decoration:underline;}
+/*//鼠标移近：红色、下划线*/
