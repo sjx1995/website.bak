@@ -91,7 +91,7 @@ tags:
 
 ### 完成之后创建的图标
 
-![](http://ww1.sinaimg.cn/large/9f2a978ely1fvcknqr0ikj20nm0gowei.jpg)
+![](https://ww1.sinaimg.cn/large/9f2a978ely1fvcknqr0ikj20nm0gowei.jpg)
 
 ### 完整代码
 [SVG入门—如何手写SVG(总结) - 掘金](https://juejin.im/post/5acd7c316fb9a028c813348d#heading-20)
