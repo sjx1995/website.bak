@@ -1,5 +1,5 @@
 ---
-title: 手写SVG
+title: 手写SVG入门
 date: 2018-09-17 15:40:25
 categories: 学习笔记
 tags:
@@ -10,7 +10,7 @@ tags:
 
 文章介绍了如何绘制六个简单的SVG图标，文章写的很详细，个人思考写在注释里面了，直接上代码。
 
-```
+```html
         <svg width="750px" height="500px">
             <defs>
 
