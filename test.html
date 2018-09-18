@@ -4,33 +4,52 @@
     <meta charset="UTF-8">
     <title>Test your browser</title>
     <style type="text/css">
-        div {
+        .text {
             font-size: 20px;
             text-align: center;
+            min-height: calc(100vh - 130px);
+        }
+        .comment {
+            font-size: 14px;
+            text-align: center;
+            height: 50px;
+        }
+        hr {
+            width: 80%;
         }
     </style>
 </head>
 <body>
     <div class="text">
-        <p class="windowWidth"></p>
-        <p class="windowHeight"></p>
-        <p class="screenWidth"></p>
-        <p class="screenHeight"></p>
-        <p class="userAgent"></p>
+        <div class="windowWidth"></div>
+        <div class="windowHeight"></div>
+        <div class="screenWidth"></div>
+        <div class="screenHeight"></div>
+        <hr>
+        <div class="userAgent"></div>
+    </div>
+    <div class="comment">
+        <p class="commentWHeight">1.当前窗口可视高度指浏览器的视口高度，值不包括浏览器的bar</p>
+        <p class="commentSHeight">2.当前屏幕可用高度指浏览器窗口最大化后的高度，值包括浏览器的bar</p>
     </div>
     <script>
-        document.getElementsByClassName('windowWidth')[0].innerText = "浏览器当前窗口可视宽度： " + window.innerWidth;
-        document.getElementsByClassName('windowHeight')[0].innerText = "浏览器当前窗口可视高度： " + window.innerHeight;
-        document.getElementsByClassName('screenWidth')[0].innerText = "当前屏幕最大可用宽度： " + window.screen.availWidth;
-        document.getElementsByClassName('screenHeight')[0].innerText = "当前屏幕最大可用高度： " + window.screen.availHeight;
-        document.getElementsByClassName('userAgent')[0].innerText = "当前浏览器的用户代理头： " + navigator.userAgent;
+        // document.getElementsByClassName('windowWidth')[0].innerText = "浏览器当前窗口可视宽度： " + window.innerWidth;
+        document.getElementsByClassName('windowWidth')[0].innerHTML = "<p>浏览器当前窗口可视宽度： " + window.innerWidth + "</p>";
+        // document.getElementsByClassName('windowHeight')[0].innerText = "浏览器当前窗口可视高度： " + window.innerHeight;
+        document.getElementsByClassName('windowHeight')[0].innerHTML = "<p>浏览器当前窗口可视高度<sup>1</sup>： " + window.innerHeight + "</p>";
+        // document.getElementsByClassName('screenWidth')[0].innerText = "当前屏幕最大可用宽度： " + window.screen.availWidth;
+        document.getElementsByClassName('screenWidth')[0].innerHTML = "<p>当前屏幕可用宽度： " + window.screen.availWidth + "</p>";
+        // document.getElementsByClassName('screenHeight')[0].innerText = "当前屏幕最大可用高度： " + window.screen.availHeight;
+        document.getElementsByClassName('screenHeight')[0].innerHTML = "<p>当前屏幕可用高度<sup>2</sup>： " + window.screen.availHeight + "</p>";
+        // document.getElementsByClassName('userAgent')[0].innerText = "当前浏览器的用户代理头： " + navigator.userAgent;
+        document.getElementsByClassName('userAgent')[0].innerHTML = "<p>当前浏览器的用户代理头： " + navigator.userAgent + "</p>";
     </script>
     <script type="text/javascript">
         window.onresize = resize;
         function resize()
         {
-            document.getElementsByClassName('windowWidth')[0].innerText = "浏览器当前窗口可视宽度： " + window.innerWidth;
-            document.getElementsByClassName('windowHeight')[0].innerText = "浏览器当前窗口可视高度： " + window.innerHeight;
+            document.getElementsByClassName('windowWidth')[0].innerHTML = "<p>浏览器当前窗口可视宽度： " + window.innerWidth + "</p>";
+            document.getElementsByClassName('windowHeight')[0].innerHTML = "<p>浏览器当前窗口可视高度<sup>1</sup>： " + window.innerHeight + "</p>";
         }
     </script>
 </body>
