@@ -7,12 +7,14 @@
         .text {
             font-size: 20px;
             text-align: center;
-            min-height: calc(100vh - 130px);
+            min-height: calc(100vh - 120px);
+            line-height: 26px;
         }
         .comment {
             font-size: 14px;
             text-align: center;
-            height: 50px;
+            height: 70px;
+            line-height: 10px;
         }
         hr {
             width: 80%;
@@ -21,35 +23,43 @@
 </head>
 <body>
     <div class="text">
+        <div class="ratio"></div>
         <div class="windowWidth"></div>
         <div class="windowHeight"></div>
         <div class="screenWidth"></div>
         <div class="screenHeight"></div>
+        <div class="width"></div>
+        <div class="height"></div>
         <hr>
         <div class="userAgent"></div>
     </div>
     <div class="comment">
         <p class="commentWHeight">1.当前窗口可视高度指浏览器的视口高度，值不包括浏览器的bar</p>
         <p class="commentSHeight">2.当前屏幕可用高度指浏览器窗口最大化后的高度，值包括浏览器的bar</p>
+        <p class="commentSHeight">3.为保证数据准确，请使用Chrome/Firefox/Edge/IE 11+</p>
     </div>
     <script>
+        var wR = window.devicePixelRatio;
+        document.getElementsByClassName('ratio')[0].innerHTML = "<p>当前浏览器缩放比例： " + wR * 100 + "%</p>";
         // document.getElementsByClassName('windowWidth')[0].innerText = "浏览器当前窗口可视宽度： " + window.innerWidth;
-        document.getElementsByClassName('windowWidth')[0].innerHTML = "<p>浏览器当前窗口可视宽度： " + window.innerWidth + "</p>";
         // document.getElementsByClassName('windowHeight')[0].innerText = "浏览器当前窗口可视高度： " + window.innerHeight;
-        document.getElementsByClassName('windowHeight')[0].innerHTML = "<p>浏览器当前窗口可视高度<sup>1</sup>： " + window.innerHeight + "</p>";
         // document.getElementsByClassName('screenWidth')[0].innerText = "当前屏幕最大可用宽度： " + window.screen.availWidth;
-        document.getElementsByClassName('screenWidth')[0].innerHTML = "<p>当前屏幕可用宽度： " + window.screen.availWidth + "</p>";
         // document.getElementsByClassName('screenHeight')[0].innerText = "当前屏幕最大可用高度： " + window.screen.availHeight;
-        document.getElementsByClassName('screenHeight')[0].innerHTML = "<p>当前屏幕可用高度<sup>2</sup>： " + window.screen.availHeight + "</p>";
         // document.getElementsByClassName('userAgent')[0].innerText = "当前浏览器的用户代理头： " + navigator.userAgent;
+        document.getElementsByClassName('windowWidth')[0].innerHTML = "<p>浏览器当前窗口可视宽度： " + window.innerWidth + "(缩放后)&emsp;" + window.innerWidth * wR + "(缩放前)</p>";
+        document.getElementsByClassName('windowHeight')[0].innerHTML = "<p>浏览器当前窗口可视高度<sup>1</sup>： " + window.innerHeight + "(缩放后)&emsp;" + window.innerHeight * wR + "(缩放前)</p>";
+        document.getElementsByClassName('screenWidth')[0].innerHTML = "<p>当前屏幕可用宽度： " + window.screen.availWidth + "(缩放后)&emsp;" + window.screen.availWidth * wR + "(缩放前)</p>";
+        document.getElementsByClassName('screenHeight')[0].innerHTML = "<p>当前屏幕可用高度<sup>2</sup>： " + window.screen.availHeight + "(缩放后)&emsp;" + window.screen.availHeight * wR + "(缩放前)</p>";
+        document.getElementsByClassName('width')[0].innerHTML = "<p>当前屏幕总宽度： " + window.screen.width + "(缩放后)&emsp;" + window.screen.width * wR + "(缩放前)</p>";
+        document.getElementsByClassName('height')[0].innerHTML = "<p>当前屏幕总高度： " + window.screen.height + "(缩放后)&emsp;" + window.screen.height * wR + "(缩放前)</p>";
         document.getElementsByClassName('userAgent')[0].innerHTML = "<p>当前浏览器的用户代理头： " + navigator.userAgent + "</p>";
     </script>
     <script type="text/javascript">
         window.onresize = resize;
         function resize()
         {
-            document.getElementsByClassName('windowWidth')[0].innerHTML = "<p>浏览器当前窗口可视宽度： " + window.innerWidth + "</p>";
-            document.getElementsByClassName('windowHeight')[0].innerHTML = "<p>浏览器当前窗口可视高度<sup>1</sup>： " + window.innerHeight + "</p>";
+            document.getElementsByClassName('windowWidth')[0].innerHTML = "<p>浏览器当前窗口可视宽度： " + window.innerWidth + "(缩放后)&emsp;" + window.innerWidth * wR + "(缩放前)</p>";
+            document.getElementsByClassName('windowHeight')[0].innerHTML = "<p>浏览器当前窗口可视高度<sup>1</sup>： " + window.innerHeight + "(缩放后)&emsp;" + window.innerHeight * wR + "(缩放前)</p>";
         }
     </script>
 </body>
