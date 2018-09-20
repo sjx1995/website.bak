@@ -1,8 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body, html {
     height: 100%;
-    margin: 0;
 }
-
 .topbar {
     height: 56px;
     opacity: 0.9;
@@ -39,6 +41,14 @@ body, html {
     flex-direction: row;
     justify-content: space-around;
 }
+.topbar-text a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 56px;
+    text-decoration: none;
+    color: #212121;
+}
 .article-container {
     margin-top: 50px;
     left: 0;
@@ -56,6 +66,7 @@ body, html {
     background-color: red;
     color: white;
     padding: 7px 17px 7px 17px;
+    box-sizing: border-box;
 }
 .article-address:link {
     color: white;
