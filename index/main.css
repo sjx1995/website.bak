@@ -1,3 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*隐藏滚动条 Chrome*/
+/*参考https://juejin.im/post/5a6046dbf265da3e253c3534*/
+body::-webkit-scrollbar {
+    display: none;
+}
+/*隐藏滚动条 IE & Edge*/
+body {
+    -ms-overflow-style: none;
+}
+/*隐藏滚动条 Firefox*/
+html {
+    overflow: -moz-hidden-unscrollable; /*注意！若只打 hidden，chrome 的其它 hidden 会出问题*/
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: calc(100vw + 18px); /*浏览器滚动条的长度大约是 18px*/
+    overflow: auto;
+}
+/*html,body {*/
+    /*height: 100%;*/
+/*}*/
 /*.mdui-row > [class*="mdui-col-"] {*/
     /*padding-top: 13px;*/
     /*padding-bottom: 70px;*/
@@ -5,9 +32,6 @@
     /*border: 1px solid #C5CAE9;*/
     /*margin-bottom: 8px;*/
 /*}*/
-html,body {
-    height: 100%;
-}
 .mdui-toolbar {
     position: fixed;
     z-index: 1;
@@ -34,9 +58,49 @@ html,body {
 }
 .mdui-container-fluid {
     margin-top: 70px;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 130px);
     /*margin-bottom: 60px;*/
     box-sizing: border-box;
+    margin-top: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.siteName {
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #cccccc;
+}
+.siteName p {
+    font-size: 100px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 400px;
+}
+.s {
+    color: #5994F5;
+}
+.u {
+    color: #EA4335;
+}
+.n {
+    color: #FBBC05;
+}
+.l {
+    color: #5994F5;
+}
+.y {
+    color: #34a853;.
+}
+.doot {
+    font-size: 30px;
+}
+.in {
+    color: #EA4335;
+    font-size: 30px;
 }
 /*280*4+10*8=1200*/
 .card-box {
