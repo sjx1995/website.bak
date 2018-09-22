@@ -12,10 +12,10 @@
 - <https://material.io/design/>
 
 ---
-### 9.22 更新
+### 18.9.22 更新
 
 [主页](https://sunly.in)对移动端进行适配
 
-### 9.5更新
+### 18.9.5 更新
 
 [Ohhhhhhhhhhhh](https://sunly.in/Ohhhhhhhhhhhh)页面使用[汉字标准格式](https://github.com/ethantw/Han)排版框架
