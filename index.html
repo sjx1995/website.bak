@@ -45,8 +45,8 @@
                     <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                 </div>
                 <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                    <li class="mdui-list-item mdui-ripple"><a href="https://sjx1995.github.io/">旧博客地址</a></li>
-                    <li class="mdui-list-item mdui-ripple"><a href="./test.html">浏览器信息测试</a></li>
+                    <li class="mdui-list-item mdui-ripple" onclick="javascript:document.getElementById('link-old-blog').click();"><a href="https://sjx1995.github.io/" id="link-old-blog">旧博客地址</a></li>
+                    <li class="mdui-list-item mdui-ripple" onclick="javascript:document.getElementById('link-test-browser').click();"><a href="./test.html" id="link-test-browser">浏览器信息测试</a></li>
                 </ul>
             </li>
 
@@ -57,7 +57,7 @@
                     <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                 </div>
                 <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                    <li class="mdui-list-item mdui-ripple"><a href="https://verrickt.github.io/">Verrickt</a></li>
+                    <li class="mdui-list-item mdui-ripple" onclick="javascript:document.getElementById('link-to-verrickt').click();"><a href="https://verrickt.github.io/" id="link-to-verrickt">Verrickt</a></li>
                 </ul>
             </li>
 
@@ -225,18 +225,18 @@
     <script type="text/javascript">
         function siteTime(){
             window.setTimeout("siteTime()", 1000);
-            var seconds = 1000
-            var minutes = seconds * 60
-            var hours = minutes * 60
-            var days = hours * 24
-            var years = days * 365
-            var today = new Date()
-            var todayYear = today.getFullYear()
-            var todayMonth = today.getMonth()
-            var todayDate = today.getDate()
-            var todayHour = today.getHours()
-            var todayMinute = today.getMinutes()
-            var todaySecond = today.getSeconds()
+            const seconds = 1000;
+            const minutes = seconds * 60;
+            const hours = minutes * 60;
+            const days = hours * 24;
+            const years = days * 365;
+            const today = new Date();
+            const todayYear = today.getFullYear();
+            const todayMonth = today.getMonth();
+            const todayDate = today.getDate();
+            const todayHour = today.getHours();
+            const todayMinute = today.getMinutes();
+            const todaySecond = today.getSeconds();
 
             /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
             year - 作为date对象的年份，为4位年份值
@@ -246,25 +246,25 @@
             minutes - 0-59之间的整数，做为date对象的分钟数
             seconds - 0-59之间的整数，做为date对象的秒数
             microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-            var t1 = Date.UTC(2015,11,3,23,33,0)
-            var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
-            var diff = t2-t1
+            const t1 = Date.UTC(2015, 11, 3, 23, 33, 0);
+            const t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+            const diff = t2 - t1;
 
-            var diffYears = Math.floor(diff/years)
-            var diffDays = Math.floor((diff/days)-diffYears*365)
-            var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
-            var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
-            var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
+            const diffYears = Math.floor(diff / years);
+            const diffDays = Math.floor((diff / days) - diffYears * 365);
+            const diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+            const diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+            const diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
             document.getElementById("sitetime").innerHTML=diffYears+"年"+diffDays+"天"+diffHours+"时"+diffMinutes+"分"+diffSeconds+"秒"
         }
         siteTime()
     </script>
     <script>
-        var _hmt = _hmt || [];
+        const _hmt = _hmt || [];
         (function() {
-            var hm = document.createElement("script");
+            const hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?628dd1698014422f37e5cc1637680a90";
-            var s = document.getElementsByTagName("script")[0]; 
+            const s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
     </script>

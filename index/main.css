@@ -149,6 +149,14 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* 手机平板上右下角菜单距离屏幕右下角*/
+.mdui-fab-fixed, .mdui-fab-wrapper {
+    position: fixed!important;
+    right: 20px!important;
+    bottom: 40px!important;
 }
 .footer-nav {
     position: relative;
