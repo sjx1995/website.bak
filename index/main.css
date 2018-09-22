@@ -11,6 +11,19 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
 }
+/*隐藏滚动条 Firefox*/
+/*html {*/
+    /*!*注意！若只打 hidden，chrome 的其它 hidden 会出问题*!*/
+    /*overflow: -moz-hidden-unscrollable; */
+    /*height: 100%;*/
+/*}*/
+
+/*body {*/
+    /*height: 100%;*/
+    /*!*浏览器滚动条的长度大约是 18px*!*/
+    /*width: calc(100vw + 18px); */
+    /*overflow: auto;*/
+/*}*/
 /*html,body {*/
     /*height: 100%;*/
 /*}*/
@@ -111,7 +124,7 @@ body {
 .mdui-card {
     width: 280px;
     height: 442px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -154,4 +167,5 @@ body {
 }
 .footer-nav a {
     color: #ffff00;
+    text-decoration: none;
 }
