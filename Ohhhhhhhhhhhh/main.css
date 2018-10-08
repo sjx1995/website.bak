@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 /*@font-face {*/
     /*font-family: 'cwTeXMing';*/
     /*font-style: normal;*/
@@ -102,24 +106,24 @@ p:lang(zh-Hant) {
     -webkit-animation: downdown 2.5s infinite both 1s;
 }
 i.css-icon-down:before {
-border-bottom: 4px solid #000000;
-border-right: 4px solid #000000;
-width: 25px;
-height: 25px;
+    border-bottom: 4px solid #000000;
+    border-right: 4px solid #000000;
+    width: 25px;
+    height: 25px;
 }
 @keyframes downdown {
-0% {
-opacity: 0;
-transform: translate3d(0,-8px,0);
-}
-
-60% {
-opacity: 0.3;
-transform: translate3d(0,0,0);
-}
-
-100% {
+    0% {
     opacity: 0;
-    transform: translate3d(0, 8px, 0);
-}
+    transform: translate3d(0,-8px,0);
+    }
+
+    60% {
+    opacity: 0.3;
+    transform: translate3d(0,0,0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 8px, 0);
+    }
 }
