@@ -25,17 +25,60 @@ td {
 }
 /*通用样式*/
 /*鼠标触发的过渡效果*/
-.shoot td {
-    height: 400px;
+.fire td {
     cursor: crosshair;
+    background: rgb(221, 221, 221);
     text-align: center;
-}
-.shoot div {
     position: relative;
-    margin: 0 auto;
-    width: 500px;
-    height: 350px;
-    border: 2px solid #003004;
+    overflow: hidden;
+}
+.fire span {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    font-size: 21px;
+}
+.trigger {
+    width: 160px;
+    height: 141px;
+    position: absolute;
+    top: 0;
+    left: 535px;
+    opacity: 0;
+    -webkit-transition: all 1s linear .5s;
+    -moz-transition: all 1s linear .5s;
+    -ms-transition: all 1s linear .5s;
+    -o-transition: all 1s linear .5s;
+    transition: all 1s linear .5s;
+}
+.trigger:hover {
+    opacity: 1;
+}
+.fire img {
+    position: absolute;
+    top: 15px;
+    left: 550px;
+    width: 130px;
+    height: auto;
+}
+.fire .flame {
+    left: 15px;
+}
+.fire .wood {
+    top: 142px;
+    z-index: 4;
+    opacity: .4;
+}
+.fire .trigger::after {
+    content: "";
+    width: 400px;
+    height: 300px;
+    background: radial-gradient(ellipse farthest-corner, red, yellow 36%, rgb(221, 221, 221) 74%, rgb(221, 221, 221));
+    position: absolute;
+    top: -72px;
+    left: -116px;
+    opacity: .4;
+    z-index: 2;
 }
 /*飞行的方块*/
 .fly td {
@@ -45,6 +88,7 @@ td {
 .fly div {
     width: 106px;
     height: 60px;
+    line-height: 60px;
     border: 1px solid #000000;
     background-color: #ffffff;
     border-radius: 10px;
@@ -52,9 +96,9 @@ td {
     top: 20px;
     left: 20px;
     font-size: 12px;
-    -webkit-animation: move 5s infinite;
-    -o-animation: move 5s infinite;
-    animation: move 5s liner infinite;
+    -webkit-animation: move 7s infinite;
+    -o-animation: move 7s infinite;
+    animation: move 7s infinite;
     text-align: center;
 }
 @keyframes move {
@@ -79,12 +123,13 @@ td {
         transform: rotate(0deg);
     }
     30% {
-        top: 60px;
+        top: 40px;
         left: 1000px;
         width: 80px;
         height: 40px;
         line-height: 40px;
         background-color: red;
+        border-radius: 10px;
         -webkit-transform: rotate(-60deg);
         -moz-transform: rotate(-60deg);
         -ms-transform: rotate(-60deg);
@@ -92,12 +137,13 @@ td {
         transform: rotate(-60deg);
     }
     35% {
-        top: 120px;
+        top: 110px;
         left: 1000px;
         width: 80px;
-        height: 40px;
-        line-height: 40px;
+        height: 80px;
+        line-height: 80px;
         background-color: red;
+        border-radius: 50%;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
@@ -108,8 +154,9 @@ td {
         top: 100px;
         left: 600px;
         width: 80px;
-        height: 40px;
-        line-height: 40px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
         background-color: orange;
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -117,20 +164,21 @@ td {
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-    75% {
+    70% {
         top: 100px;
         left: 200px;
         width: 80px;
         height: 40px;
         line-height: 40px;
         background-color: yellow;
+        border-radius: 10px;
         -webkit-transform: rotate(-1440deg);
         -moz-transform: rotate(-1440deg);
         -ms-transform: rotate(-1440deg);
         -o-transform: rotate(-1440deg);
         transform: rotate(-1440deg);
     }
-    90% {
+    80% {
         top: 100px;
         left: 200px;
         width: 80px;
@@ -143,7 +191,7 @@ td {
         -o-transform: scale(0.5);
         transform: scale(0.5);
     }
-    100% {
+    90% {
         top: 20px;
         left: 20px;
         width: 106px;
@@ -163,22 +211,21 @@ td {
     margin-left: 200px;
     margin-top: 0;
     float: left;
-    /*background-color: pink;*/
 }
 .sun div:nth-child(1)::before {
     content: "";
     height: 50px;
     width: 50px;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(145, 209, 255, 0.9);
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -25px;
     margin-left: -25px;
     border-radius: 50%;
-    -webkit-animation: breathe1 3s linear infinite;
-    -o-animation: breathe1 3s linear infinite;
-    animation: breathe1 3s linear infinite;
+    -webkit-animation: breathe1 4s linear infinite;
+    -o-animation: breathe1 4s linear infinite;
+    animation: breathe1 4s linear infinite;
 }
 .sun div:nth-child(1)::after {
     content: "";
@@ -191,9 +238,9 @@ td {
     margin-top: -40px;
     margin-left: -40px;
     border-radius: 50%;
-    -webkit-animation: breathe1 4s linear infinite;
-    -o-animation: breathe1 4s linear infinite;
-    animation: breathe1 4s linear infinite;
+    -webkit-animation: breathe1 4s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+    -o-animation: breathe1 4s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+    animation: breathe1 4s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
 }
 .sun div:nth-child(2){
     width: 100px;
