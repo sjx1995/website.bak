@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    height: 600px;
+    text-align: center;
+}
+.cover {
+    height: 800px;
+    line-height: 800px;
+}
+.section {
+    height: 400px;
+    line-height: 400px;
+    background: url("../images/10.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fly-title {
+    background-image: url("../images/material-1-1024x576.jpg");
+}
+.sun-title {
+    background-image: url("../images/material-icons-1-1024x576.png");
+}
+.cortana-title {
+    background-image: url("../images/Material-design.jpg");
+}
+.demo {
+    padding: 100px 200px;
+    margin: 0 auto;
+}

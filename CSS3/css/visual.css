@@ -1,40 +1,39 @@
 /*通用样式*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-table {
-    width: 1200px;
-    margin: 50px auto 400px;
-    border-collapse: collapse;
-}
-table, th, td {
-    border: 1px solid #000000;
-}
-th {
-    width: 100%;
-    text-align: left;
-    font-size: 18px;
-    text-indent: 2em;
-    height: 60px;
-    line-height: 60px;
-}
-td {
-    height: 200px;
-}
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*table {*/
+    /*width: 1200px;*/
+    /*margin: 50px auto 400px;*/
+    /*border-collapse: collapse;*/
+/*}*/
+/*table, th, td {*/
+    /*border: 1px solid #000000;*/
+/*}*/
+/*th {*/
+    /*width: 100%;*/
+    /*text-align: left;*/
+    /*font-size: 18px;*/
+    /*text-indent: 2em;*/
+    /*height: 60px;*/
+    /*line-height: 60px;*/
+/*}*/
+/*td {*/
+    /*height: 200px;*/
+/*}*/
 /*通用样式*/
 /*鼠标触发的过渡效果*/
-.fire {
-    background: rgb(221, 221, 221);
-}
-.fire td {
+/*.fire {*/
+    /*background: rgb(221, 221, 221);*/
+/*}*/
+.fire-demo {
     cursor: crosshair;
-    text-align: center;
     position: relative;
     overflow: hidden;
 }
-.fire span {
+.fire-demo span {
     position: absolute;
     top: 50px;
     left: 200px;
@@ -52,26 +51,26 @@ td {
 .trigger:hover {
     opacity: 1;
 }
-.fire img {
+.fire-demo img {
     position: absolute;
     top: 15px;
     left: 550px;
     width: 130px;
     height: auto;
 }
-.fire .flame {
+.fire-demo .flame {
     left: 15px;
 }
-.fire .wood {
+.fire-demo .wood {
     top: 142px;
     z-index: 4;
     opacity: .4;
 }
-.fire .trigger::after {
+.fire-demo .trigger::after {
     content: "";
     width: 400px;
     height: 300px;
-    background: radial-gradient(ellipse farthest-corner, red, yellow 36%, rgb(221, 221, 221) 74%, rgb(221, 221, 221));
+    background: radial-gradient(ellipse farthest-corner, red, yellow 36%, #ffffff 74%, #ffffff);
     position: absolute;
     top: -72px;
     left: -116px;
@@ -79,13 +78,13 @@ td {
     z-index: 2;
 }
 /*飞行的方块*/
-.fly {
-    background-color: #cccccc;
-}
-.fly td {
+/*.fly {*/
+    /*background-color: #cccccc;*/
+/*}*/
+.fly-demo {
     position: relative;
 }
-.fly div {
+.fly-demo div {
     width: 106px;
     height: 60px;
     line-height: 60px;
@@ -175,10 +174,10 @@ td {
     }
 }
 /*带呼吸的圆环*/
-.sun {
+.sun-demo {
     background-color: #8DD0FF;
 }
-.sun div:nth-child(1){
+.sun-demo div:nth-child(1){
     width: 100px;
     height: 100px;
     position: relative;
@@ -186,7 +185,7 @@ td {
     margin-top: 0;
     float: left;
 }
-.sun div:nth-child(1)::before {
+.sun-demo div:nth-child(1)::before {
     content: "";
     height: 50px;
     width: 50px;
@@ -199,7 +198,7 @@ td {
     border-radius: 50%;
     animation: breathe1 4s linear infinite;
 }
-.sun div:nth-child(1)::after {
+.sun-demo div:nth-child(1)::after {
     content: "";
     height: 80px;
     width: 80px;
@@ -212,7 +211,7 @@ td {
     border-radius: 50%;
     animation: breathe1 4s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
 }
-.sun div:nth-child(2){
+.sun-demo div:nth-child(2){
     width: 100px;
     height: 100px;
     position: relative;
@@ -220,7 +219,7 @@ td {
     margin-top: 0;
     float: left;
 }
-.sun div:nth-child(2)::before {
+.sun-demo div:nth-child(2)::before {
     content: "";
     height: 50px;
     width: 50px;
@@ -233,7 +232,7 @@ td {
     border-radius: 50%;
     animation: breathe2 2s infinite;
 }
-.sun div:nth-child(2)::after {
+.sun-demo div:nth-child(2)::after {
     content: "";
     height: 80px;
     width: 80px;
@@ -277,14 +276,12 @@ td {
     }
 }
 /*cortana*/
-.cortana {
+.cortana-demo {
     background-color: #000000;
-}
-.cortana td {
     position: relative;
     overflow: hidden;
 }
-.cortana p {
+.cortana-demo p {
     color: #ffffff;
     margin-top: 200px;
     position: absolute;
