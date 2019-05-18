@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>Sunly&#39;s Blog</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+
+  <body>
+    <header class="header">
+  <div class="blog-title">
+    <a href="/blog/" class="logo">Sunly&#39;s Blog</a>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      
+        <li class="menu-item">
+          <a href="/blog/" class="menu-item-link">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/blog/archives" class="menu-item-link">Archives</a>
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="main">
+      <article class="post">
+  <div class="post-title">
+    <h2 class="title">微星GE60-403安装黑苹果10.14</h2>
+  </div>
+   <div class="post-meta">
+    <span class="post-time">2019-04-24</span>
+  </div>
+  <div class="post-content">
+    <h1 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h1><ul>
+<li>Paragon Hard Disk Manager™ 12 Server</li>
+<li>DiskGenius</li>
+<li>适合你电脑的clover</li>
+<li>OS X 10.14 备份镜像 pbf文件</li>
+</ul>
+<a id="more"></a>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="准备苹果分区"><a href="#准备苹果分区" class="headerlink" title="准备苹果分区"></a>准备苹果分区</h2><p>使用<code>Paragon Hard Disk Manager™ 12 Server</code>格式化一个<code>Apple HFS</code>分区：</p>
+<p><img src="https://ws1.sinaimg.cn/large/9f2a978ely1g2d31t67smj20ju00gjr5.jpg" alt></p>
+<p>在分区中写入pbf文件：</p>
+<p><img src="https://ws1.sinaimg.cn/large/9f2a978ely1g2d320zgmwj20fc0db3z2.jpg" alt></p>
+<h2 id="准备引导分区"><a href="#准备引导分区" class="headerlink" title="准备引导分区"></a>准备引导分区</h2><p>使用<code>DiskGenius</code>格式化一个100m大小的<code>FAT32</code>格式分区，用来存放clover。</p>
+<p><img src="https://ws1.sinaimg.cn/large/9f2a978ely1g2d325hctvj20jf01jweb.jpg" alt></p>
+<p>最关键的是找到适合你电脑配置clover，这里分享两个链接，一个是github上分享的一个clover合集，另一个是我自己的clover：</p>
+<ul>
+<li><a href="https://github.com/sqlsec/clover" target="_blank" rel="noopener">sqlsec/clover</a></li>
+<li><a href="https://github.com/sjx1995/CLOVER" target="_blank" rel="noopener">sjx1995/clover</a></li>
+</ul>
+<h2 id="使用UEFI启动"><a href="#使用UEFI启动" class="headerlink" title="使用UEFI启动"></a>使用UEFI启动</h2><p>因为主板比较老，所以需要手动切换到<code>UEFI with CSM</code>引导系统：</p>
+<p><img src="https://ws1.sinaimg.cn/large/9f2a978ely1g2d307qv06j23402c0kjo.jpg" alt></p>
+<p>同理，如果要使用Windows需要进入bios换回<code>LEFACY</code></p>
+<h2 id="开始黑苹果之旅"><a href="#开始黑苹果之旅" class="headerlink" title="开始黑苹果之旅"></a>开始黑苹果之旅</h2><p>在安装引导界面选择<code>install OS X</code>，等待安装完成后就可以设置并使用黑苹果了。</p>
+<p><img src="https://ws1.sinaimg.cn/large/9f2a978ely1g2d33uqbkdj23402c0npe.jpg" alt></p>
+<h1 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h1><p><img src="http://ww1.sinaimg.cn/large/0071ouepgy1g2d3ksfsncj30ga09ttar.jpg" alt></p>
+<p><img src="http://ww1.sinaimg.cn/large/0071ouepgy1g2d3n1gy8jj30ga0bi753.jpg" alt></p>
+<h1 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h1><ul>
+<li>无法驱动 Nvidia GeForce® GTX 850M</li>
+<li>无法驱动 英特尔 Dual Band Wireless-AC 3160 无线网卡</li>
+<li>不能使用蓝牙</li>
+<li>不能使用麦克风</li>
+<li>不能使用摄像头</li>
+<li>不能使用HDMI接口</li>
+<li>微信等部分应用打开只有黑框（没有搜索到有类似的情况）</li>
+<li>机器进入睡眠模式会无法唤醒</li>
+<li>散热压力有点大…</li>
+</ul>
+<hr>
+<p></p><p style="text-align:right"><br>By.Sunly<br><br>Taizhou Spring<br></p><br><br><p></p>
+
+  </div>
+</article>
+
+    </main>
+    <footer>
+    <p>Powered by Hexo. Theme by Sunly. Copyright © Sunly 2019-2019</p>
+</footer>
+  </body>
+</html>
