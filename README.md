@@ -1,6 +1,8 @@
+**项目已经不在维护，新博客项目开源在 [sjx1995/i-blog](https://github.com/sjx1995/i-blog) 仍然可以通过 [sunly.in](https://sunly.in) 访问博客**
+
 # 个人网站备份
 
-## 网站链接: [sunly.in](https://sunly.in)
+网站链接: [sunly.in](https://sunly.in)
 
 ---
 
